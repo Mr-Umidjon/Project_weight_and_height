@@ -1,5 +1,6 @@
 from read_data import read_csv_data
 
+
 def get_data(data):
     """
     Get data from list.
@@ -15,7 +16,18 @@ def get_data(data):
     gender = []
     weight = []
     height = []
-    
-    # WRITE YOUR CODE HERE
 
-    return gender,weight,height
+    # WRITE YOUR CODE HERE
+    for row in data[1:]:
+        # print(row)
+        gender.append(row[0] == 'Female')
+        # print(type(row[1]))
+        weight.append(float(row[1]) / 2.205)
+        height.append(float(row[2]) * 2.54)
+
+    return gender, weight, height
+
+
+data = read_csv_data('data/weight-height.csv')
+res = get_data(data)
+print(res)
