@@ -20,7 +20,7 @@ def get_data(data):
     # WRITE YOUR CODE HERE
     for row in data[1:]:
         # print(row)
-        gender.append(row[0] == 'Female')
+        gender.append(int(row[0] == 'Female'))
         # print(type(row[1]))
         weight.append(float(row[1]))
         height.append(float(row[2]))
