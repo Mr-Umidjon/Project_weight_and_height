@@ -22,8 +22,8 @@ def get_data(data):
         # print(row)
         gender.append(int(row[0] == 'Female'))
         # print(type(row[1]))
-        height.append(float(row[2]) * 2.54)
-        weight.append(float(row[1]) / 2.205)
+        height.append(float(row[2]))
+        weight.append(float(row[1]))
 
     return gender, weight, height
 
