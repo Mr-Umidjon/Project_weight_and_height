@@ -22,12 +22,12 @@ def get_data(data):
         # print(row)
         gender.append(row[0] == 'Female')
         # print(type(row[1]))
-        weight.append(float(row[1]) / 2.205)
-        height.append(float(row[2]) * 2.54)
+        weight.append(float(row[1]))
+        height.append(float(row[2]))
 
     return gender, weight, height
 
 
 data = read_csv_data('data/weight-height.csv')
 res = get_data(data)
-print(res[0])
+# print(res[0])
