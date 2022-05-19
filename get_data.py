@@ -25,10 +25,9 @@ def get_data(data):
         weight.append(float(row[1]) / 2.205)
         height.append(float(row[2]) * 2.54)
 
-
     return gender, weight, height
 
 
 data = read_csv_data('data/weight-height.csv')
 res = get_data(data)
-print(res)
+print(res[0])
