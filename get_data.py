@@ -28,6 +28,6 @@ def get_data(data):
     return gender, weight, height
 
 
-data = read_csv_data('data/weight-height.csv')
-res = get_data(data)
+# data = read_csv_data('data/weight-height.csv')
+# res = get_data(data)
 # print(res[0])
